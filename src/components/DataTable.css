@@ -1,0 +1,58 @@
+.grid-container {
+    display: grid; 
+    height: 300px;
+    overflow: auto;
+    background-color: #F5F5F5;
+    width: 600px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+thead th {
+    background: white;
+    text-align: left;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+thead th.first-cell {
+    z-index: 9999;
+}
+
+tbody:before {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+tbody tr {
+
+}
+
+tbody td {
+    height: 50px;
+    min-width: 150px;
+    background-color: #F5F5F5;
+}
+
+tbody tr:hover td {
+    background-color: #A0E8AF;
+    cursor: pointer;
+}
+
+.first-cell {
+    left: 0;
+    position: sticky;
+}
+
+.not-active td {
+    background-color: #e4f0f5;
+}
