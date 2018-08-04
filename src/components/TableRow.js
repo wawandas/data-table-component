@@ -9,7 +9,7 @@ const TableRow = ({row, changeActiveStatus}) => {
             <td>{row.cultivation_id}</td>
             <td>{row.company_name}</td>
             <td>{row.area_in_hectares}</td>
-            <td key={row.active}><Switch rowData={row} changeActiveStatus={changeActiveStatus}/></td>
+            <td><Switch rowData={row} changeActiveStatus={changeActiveStatus}/></td>
             <td>{row.crop_name}</td>
             <td>{row.harvest_year}</td>
         </tr>

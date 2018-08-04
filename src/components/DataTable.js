@@ -15,7 +15,6 @@ class DataTable extends Component {
         this.changeActiveStatus = this.changeActiveStatus.bind(this);
     }
 
-    //has to be improved!!!
     changeActiveStatus(rowId) {
         let indexObject = this.state.data.findIndex(e => e.cultivation_id === rowId);
         this.state.data[indexObject].active = !this.state.data[indexObject].active;
